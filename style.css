@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container-body {
+  background-color: rgb(11, 72, 72);
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.title {
+  margin-top: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.gamestate {
+  margin: auto;
+  width: 70%;
+  background-color: azure;
+  color: black;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+#winner {
+  margin-top: 10px;
+}
+
+#player-identifier {
+  text-align: right;
+}
+.grid {
+  margin: auto;
+  background-color: #ebeff8;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  width: 30%;
+  row-gap: 5px;
+  column-gap: 5px;
+}
+.grid-item {
+  background-color: #2362e1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: bold;
+  font-size: 24px;
+  aspect-ratio: 1;
+  color: #fff;
+}
+.grid-item:hover {
+  background-color: #7289ef;
+  transition: 0.3sec;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#restartButton {
+  width: 10%;
+  background-color: aqua;
+  padding: 2px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+#restartButton:hover {
+  background-color: rgb(138, 209, 209);
+}
